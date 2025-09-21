@@ -62,8 +62,23 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="tutor-portrait">
-                        <img src="images/dominic-portrait.jpg" alt="Dominic - Professional English Tutor" class="portrait-img">
+                    <div class="tutor-portrait-container">
+                        <img src="images/dominic-portrait.jpg" alt="Dominic - Professional English Tutor" class="portrait-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="portrait-fallback">
+                            <div class="fallback-avatar">
+                                <span class="initials">DD</span>
+                            </div>
+                            <div class="fallback-info">
+                                <h3>Dominic Delic</h3>
+                                <p>Professional English Tutor</p>
+                                <p class="chinese-text">专业英语导师</p>
+                                <div class="credentials">
+                                    <span class="credential">🇭🇷 Croatian Native</span>
+                                    <span class="credential">🇬🇧 English Fluent</span>
+                                    <span class="credential">🇨🇳 Chinese Speaker</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="portrait-overlay">
                             <h3>Dominic Delic</h3>
                             <p>Professional English Tutor | 专业英语导师</p>

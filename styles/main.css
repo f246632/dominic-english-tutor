@@ -184,6 +184,92 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Portrait Styling */
+.tutor-portrait-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutor-portrait-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(37, 99, 235, 0.3);
+}
+
+/* Professional Fallback Styling */
+.portrait-fallback {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.fallback-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+    border: 4px solid rgba(255,255,255,0.2);
+}
+
+.initials {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.fallback-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.fallback-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.fallback-info .chinese-text {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.fallback-info .credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.fallback-info .credential {
+    font-size: 0.8rem;
+    background: rgba(255,255,255,0.15);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Keep existing portrait styles for when image loads */
 .tutor-portrait {
     position: relative;
     width: 300px;
